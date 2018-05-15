@@ -1,0 +1,12 @@
+
+  <h2><%= @recipe["title"] %></h2>
+  <h3> Chef: <%= @recipe["chef"] %></h3>
+  <h4> Ingredients: <%= @recipe["ingredients"] %></h4>
+  <h4> Prep time: <%= @recipe["prep_time"] %></h4>
+  <h4> Directions: <%= @recipe["directions"] %></h4>
+  <img src="<% @recipe['image_url'] %>" alt="">
+  <br>
+  <a href="/client/recipes/<%= @recipe['id'] %>/edit">Edit</a>
+  <a href="/client/recipes/<%= @recipe['id'] %>" data-method="delete">Delete</a>
+
+

@@ -1,6 +1,8 @@
 <% @recipes.each do |recipe| %>
+  <h2><a href="/client/recipes/<%= recipe["id"] %>"><%= recipe["title"] %></a></h2>
   <h2><%= recipe["title"] %></h2>
   <h3> Chef: <%= recipe["chef"] %></h3>
+  <h4> Prep time: <%= recipe["prep_time"] %></h4>
   <h4> Ingredients: <%= recipe["ingredients"] %></h4>
   <h4> Directions: <%= recipe["directions"] %></h4>
   <br/>
