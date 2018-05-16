@@ -12,6 +12,11 @@
   <body>
      <a href="/client/recipes">Home</a>
      <a href="/client/recipes/new">New Recipe</a>
+
+     <% flash.each do |name, message| %>
+      <%= message %>
+     <% end %>
+
     <%= yield %>
   </body>
 </html>
